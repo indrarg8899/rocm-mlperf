@@ -1,0 +1,14 @@
+# MLPerf ResNet-50 Offline Benchmark Configuration
+model: resnet50
+scenario: offline
+precision: fp32
+batch_size: 256
+max_samples: 50000
+data_dir: ./datasets/imagenet
+log_dir: ./logs/resnet50_offline
+output_dir: ./results
+deterministic: false
+num_threads: 4
+use_graphs: true
+num_gpus: 1
+target_accuracy: 0.7646

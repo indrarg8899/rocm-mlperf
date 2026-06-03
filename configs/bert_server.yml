@@ -1,0 +1,15 @@
+# MLPerf BERT Server Benchmark Configuration
+model: bert
+scenario: server
+precision: fp32
+batch_size: 32
+max_samples: 10833
+data_dir: ./datasets/squad
+log_dir: ./logs/bert_server
+output_dir: ./results
+deterministic: false
+num_threads: 4
+use_graphs: false
+num_gpus: 1
+target_latency_ms: 50.0
+target_accuracy: 0.9087
